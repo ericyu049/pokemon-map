@@ -1,0 +1,27 @@
+<div mat-dialog-title>
+    <h1 style="font-weight: 500">{{data.name}}</h1>
+</div>
+<div mat-dialog-content>
+    <div class="container">
+        <div class="description">
+            {{data.description}}
+        </div>
+        <div class="image">
+            <img [src]="'/assets/'+data.name+'.png'" alt="">
+        </div>
+    </div>
+    <div *ngIf="data.real_name">
+        <h2 style="margin-bottom: 0px; font-weight: 500;">Real World Reference</h2>
+        <mat-divider></mat-divider>
+        <div class="reallife">
+            <div class="description">
+                <h4 style="padding-top: 10px; font-weight: 500">{{data.real_name}}</h4>
+                {{data.real_notes}}
+            </div>
+            <div class="image">
+                <img *ngFor="let i of data.real_image" [src]="'/assets/'+i" alt="">
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    .description {
+        width: 50%;
+        padding: 5px;
+        padding-bottom: 15px;
+    }
+    .image {
+        padding: 5px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        img {
+            width: 100%;
+            min-width: 240px;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+    }
+}
+.reallife {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    .description {
+        width: 50%;
+        padding: 5px;
+        padding-bottom: 15px;
+    }
+    .image {
+        padding: 5px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        img {
+            width: 100%;
+            min-width: 240px;
+            max-width: 400px;
+            border-radius: 10px;
+            padding-bottom: 5px;
+        }
+    }
+}
