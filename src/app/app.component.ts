@@ -51,7 +51,7 @@ export class AppComponent implements OnInit {
 	}
 	openHint() {
 		this.snackbar.open('Click on any of the cities, towns or landmarks to view more information about the location. You can also use the filter toggles at the top to hide/show the locations.', 'OK', {
-			horizontalPosition: 'left',
+			horizontalPosition: 'right',
 			panelClass: 'snack'
 		})
 	}

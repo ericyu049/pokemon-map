@@ -377,7 +377,7 @@
         "description": "Olivine City (Japanese: アサギシティ Asagi City) is located on the Johto coast, near Ecruteak City and Cianwood City. Olivine is a major port city and is the home of the Glitter Lighthouse. The Glitter Lighthouse guides ships to the harbor as well as the S.S. Aqua connecting it to the port city in its sister region, Vermilion City in Kanto. Pokémon Trainers often come to Olivine City in order to win the Mineral Badge from Jasmine, the Olivine Gym Leader who specializes in Steel-type Pokémon.",
         "region": "Johto",
         "real_name": "Kōbe City, Hyōgo (Japanese: 神戸市, 兵庫県)",
-        "real_image": [],
+        "real_image": ["kobe.jpeg"],
         "real_notes": "Kōbe is the major port city in the Kansai region. The city is also well known for wagyū, or Kobe beef. Is the capital city of the Hyogo Prefecture.",
         "width": 2.2,
         "height": 7,
