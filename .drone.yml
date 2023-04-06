@@ -1,0 +1,27 @@
+kind: pipeline
+name: pokemon-map
+type: docker
+
+steps:
+  - name: Build Docker Image
+    image: docker:dind
+    volumes:
+    - name: dockersock
+      path: /var/run/docker.sock
+    commands:
+    - docker build . -t pokemon-map:latest
+  - name: Start Container
+    image: docker:dind
+    volumes:
+    - name: dockersock
+      path: /var/run/docker.sock
+    commands:
+    - docker stop pokemon-map || true
+    - docker rm pokemon-map || true
+    - docker run --name pokemon-map --network=bridge -p 4206:4200 -d pokemon-map:latest
+
+
+volumes:
+  - name: dockersock
+    host:
+      path: /var/run/docker.sock
